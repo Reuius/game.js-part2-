@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mutant Escape</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background: #1a1a1a; 
+            font-family: Arial;
+        }
+        #gameUI {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: #FFF;
+            font-size: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameUI">
+        Счёт: <span id="score">0</span> | 
+        Жизни: <span id="health">❤❤❤</span>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
